@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A23CEAE5-AC79-47D7-830C-67F760D3774D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SFML</RootNamespace>
+    <AssemblyName>SFML</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;LINUX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Audio\Listener.cs" />
+    <Compile Include="Audio\Music.cs" />
+    <Compile Include="Audio\Sound.cs" />
+    <Compile Include="Audio\SoundBuffer.cs" />
+    <Compile Include="Audio\SoundBufferRecorder.cs" />
+    <Compile Include="Audio\SoundRecorder.cs" />
+    <Compile Include="Audio\SoundStream.cs" />
+    <Compile Include="Graphics\BlendMode.cs" />
+    <Compile Include="Graphics\CircleShape.cs" />
+    <Compile Include="Graphics\Color.cs" />
+    <Compile Include="Graphics\Context.cs" />
+    <Compile Include="Graphics\ConvexShape.cs" />
+    <Compile Include="Graphics\Drawable.cs" />
+    <Compile Include="Graphics\Font.cs" />
+    <Compile Include="Graphics\Glyph.cs" />
+    <Compile Include="Graphics\Image.cs" />
+    <Compile Include="Graphics\PrimitiveType.cs" />
+    <Compile Include="Graphics\Rect.cs" />
+    <Compile Include="Graphics\RectangleShape.cs" />
+    <Compile Include="Graphics\RenderStates.cs" />
+    <Compile Include="Graphics\RenderTarget.cs" />
+    <Compile Include="Graphics\RenderTexture.cs" />
+    <Compile Include="Graphics\RenderWindow.cs" />
+    <Compile Include="Graphics\Shader.cs" />
+    <Compile Include="Graphics\Shape.cs" />
+    <Compile Include="Graphics\Sprite.cs" />
+    <Compile Include="Graphics\Text.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\Transform.cs" />
+    <Compile Include="Graphics\Transformable.cs" />
+    <Compile Include="Graphics\Vertex.cs" />
+    <Compile Include="Graphics\VertexArray.cs" />
+    <Compile Include="Graphics\View.cs" />
+    <Compile Include="System\Clock.cs" />
+    <Compile Include="System\ObjectBase.cs" />
+    <Compile Include="System\Time.cs" />
+    <Compile Include="System\Vector2.cs" />
+    <Compile Include="System\Vector3.cs" />
+    <Compile Include="Window\ContextSettings.cs" />
+    <Compile Include="Window\Event.cs" />
+    <Compile Include="Window\EventArgs.cs" />
+    <Compile Include="Window\Joystick.cs" />
+    <Compile Include="Window\Keyboard.cs" />
+    <Compile Include="Window\LoadingFailedException.cs" />
+    <Compile Include="Window\Mouse.cs" />
+    <Compile Include="Window\Sensor.cs" />
+    <Compile Include="Window\StreamAdaptor.cs" />
+    <Compile Include="Window\Touch.cs" />
+    <Compile Include="Window\VideoMode.cs" />
+    <Compile Include="Window\Window.cs" />
+    <Compile Include="Constants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Window\" />
+    <Folder Include="Audio\" />
+    <Folder Include="Graphics\" />
+    <Folder Include="System\" />
+  </ItemGroup>
+</Project>
